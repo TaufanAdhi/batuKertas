@@ -1,0 +1,227 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.inp {
+    width: 30%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+    margin: 20% auto;
+}
+
+button {
+    margin: 1rem auto;
+    width: 20%;
+
+}
+
+label {
+    font-size: 1.6rem;
+
+}
+
+input {
+    width: 80%;
+    font-size: 1rem;
+    margin: auto;
+    padding: 1rem;
+
+}
+
+.kotak {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.673);
+
+
+}
+
+.judul {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem 0rem 0rem 0rem;
+
+}
+
+.container h1 {
+    text-align: center;
+    top: 18rem;
+    left: 45%;
+    font-size: 2rem;
+    width: 15rem;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+.container {
+    display: flex;
+    position: relative;
+    margin: 0rem auto 0rem;
+    width: 82%;
+    min-height: 42rem;
+    background-color: rgb(94, 0, 0);
+    align-content: center;
+    align-items: center;
+}
+
+
+.player {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 25rem;
+    margin-left: 5rem;
+
+}
+
+.player-judul {
+    color: white;
+    position: absolute;
+    top: 2rem;
+    left: 5rem;
+    font-size: 3rem;
+}
+
+
+
+.gunting {
+    margin-bottom: 2.5rem;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    background-image: url(gunting.png);
+    background-position: -45px 14px;
+    background-size: 132px 135px;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 0, 0);
+    transition: 0.5s;
+}
+
+
+
+.gunting:hover,.kertas:hover,.batu:hover {
+
+    background-position: 15px 14px;
+
+}
+
+
+.batu {
+    margin-bottom: 2.5rem;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    background-image: url(batu.png);
+    background-position: -45px 14px;
+    transition: 0.5s;
+    background-size: 132px 135px;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 0, 0);
+
+}
+
+.kertas {
+    margin-bottom: 2.5rem;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    background-image: url(kertas.png);
+    background-position: -45px 14px;
+    transition: 0.5s;
+    background-size: 132px 135px;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 0, 0);
+}
+
+
+.lawan {
+    position: absolute;
+    right: 5rem;
+    top: 13rem;
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    background-position: 2rem 2rem;
+    background-size: 185px 174px;
+    background-repeat: no-repeat;
+    background-color: red;
+    /* background-image: url(batu-lawan.png); */
+}
+
+.lawan-judul  {
+
+    position: absolute;
+    right: 5rem;
+    top: 2rem;
+    color: white;
+    font-size: 3rem;
+
+}
+
+
+#scorPlayer {
+
+    position: absolute;
+    left: 15rem;
+    top: 1rem;
+    font-size: 5rem;
+    color: bisque;
+
+}
+
+#scorLawan {
+
+    position: absolute;
+    right: 15rem;
+    top: 1rem;
+    font-size: 5rem;
+    color: bisque;
+
+
+
+}
+
+
+
+
+.warning {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-color: rgba(127, 127, 127, 0.411);
+    display: none;
+    text-align: center;
+    
+}
+
+
+.warning h1 {
+    width: 30%;
+    height: 30%;
+    padding-top: 2rem;
+    color: white;
+    margin: 19rem auto;
+    background-color: rgba(0, 0, 0, 0.809);
+
+
+}
