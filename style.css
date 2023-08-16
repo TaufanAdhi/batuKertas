@@ -116,7 +116,9 @@ input {
 
 
 
-.gunting:hover,.kertas:hover,.batu:hover {
+.gunting:hover,
+.kertas:hover,
+.batu:hover {
 
     background-position: 15px 14px;
 
@@ -165,7 +167,7 @@ input {
     /* background-image: url(batu-lawan.png); */
 }
 
-.lawan-judul  {
+.lawan-judul {
 
     position: absolute;
     right: 5rem;
@@ -211,7 +213,7 @@ input {
     background-color: rgba(127, 127, 127, 0.411);
     display: none;
     text-align: center;
-    
+
 }
 
 
@@ -228,6 +230,133 @@ input {
 
 
 @media (max-width: 758px) {
-    
-   
+
+    html {
+
+        font-size: 0.6rem;
+
+
+    }
+
+    .judul {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 0rem 0rem 0rem 0rem;
+    }
+
+    .container {
+
+
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .container h1 {
+        position: static;
+    }
+
+
+    .player {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 25rem;
+        margin-left: -9rem;
+    }
+
+    .lawan {
+
+        position: static;
+        background-position: 1rem 0rem;
+        background-size: 129px 131px;
+    }
+
+    .player-judul,
+    .lawan-judul {
+        position: static;
+    }
+
+    #scorLawan,
+    #scorPlayer {
+
+        position: static;
+
+    }
+
+
+
+    /* mengatur gambar player  */
+
+    .kertas,
+    .batu,
+    .gunting {
+        margin-bottom: 2.5rem;
+        border-radius: 50%;
+        width: 10rem;
+        height: 10rem;
+        background-image: url(kertas.png);
+        background-position: -29px 10px;
+        transition: 0.5s;
+        background-size: 92px 74px;
+        background-repeat: no-repeat;
+        background-color: red;
+    }
+
+    .batu {
+        background-image: url(batu.png);
+
+    }
+
+    .gunting {
+        background-image: url(gunting.png);
+
+    }
+
+    .gunting:hover,
+    .kertas:hover,
+    .batu:hover {
+
+        background-position: 0px 10px;
+
+    }
+
+
+    /* mengatur input */
+
+    button {
+        margin: 1rem auto;
+        width: 25%;
+    }
+
+    label {
+        font-size: 2.6rem;
+    }
+
+    input {
+        width: 80%;
+        font-size: 1rem;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    .inp {
+        width: 50%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        text-align: center;
+        margin: 20% auto;
+    }
+
+
+
+
+
+
+
+
 }
