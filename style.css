@@ -209,7 +209,7 @@ input {
     left: 0;
     right: 0;
     bottom: 0;
-    display: block;
+    display: none;
     background-color: rgba(127, 127, 127, 0.411);
     
     text-align: center;
